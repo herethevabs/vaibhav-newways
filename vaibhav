@@ -1,0 +1,20 @@
+function FizzBuzz(phonenum)
+    {
+        let t=phonenum.toString().split('').reduce((sum,digit)=>sum+parseInt(digit),0);
+        const ans=[];
+        for(let j=1;j<=t;j++)
+        {
+            if(j%3===0&&j%4===0)
+           { ans.push("FizzBuzz");
+           }
+           else if(j%3===0){
+               ans.push("Fizz");
+           }else if(j%4===0){
+               ans.push("Buzz");
+           } else{
+               ans.push(j);
+           }
+           
+        }console.log(ans.join(" "));
+    }
+    FizzBuzz(8700223293)
